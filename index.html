@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<title>1971</title>
+<style>
+  body {
+    font-family: "Georgia";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    color: #000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+  body {
+    background-color: #FFF;
+    color: #000;
+  }
+}
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+    max-width: 95%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .nota {
+    font-style: italic;
+    font-size:xx-small;
+    text-align: center;
+  }
+
+  .chart-title{
+    font-weight:500;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .chart-inside{
+    font-family:"Helvetica";
+    font-weight:bold;
+    padding-right: 5%;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .fonte {
+    font-style: italic;
+    font-size:x-small;
+    text-align: center;
+  }
+
+  #produtividade-crescimento{
+    height: 220px;
+    width: 355px;
+  }
+
+  #pib-salarios{
+    height: 260px;
+    width: 355px;
+  }
+
+  #diferenca-renda{
+    height: 200px;
+  }
+
+  #crescimento-renda{
+    height: 220px;
+    width: 355px;
+  }
+
+  #salarios-renda{
+    height:550px;
+    width: 355px;
+  }
+
+  #concentracao-renda{
+    height: 220px;
+    width: 355px;
+  }
+
+  #participacao-renda{
+    height: 296px;
+  }
+  
+  #custo-vida{
+    height: 224px;
+  }
+
+  #preco-ouro{
+    height: 224px;
+    width: 355px;
+  }
+  @media (min-width: 768px) {
+
+    h1 {
+      font-size: 3em;
+    }
+
+    .nota{
+      font-size:small;
+    }
+    .fonte {
+      font-size:medium
+    }
+
+    .chart-title {
+      font-size: 1.5em;
+    }
+
+
+#produtividade-crescimento{
+    width:700px;
+    height: 387px;
+  }
+
+  #pib-salarios{
+    width:700px;
+    height: 414px;
+  }
+
+  #diferenca-renda{
+    width:618px;
+    height: 289px;
+  }
+
+  #crescimento-renda{
+    width:800px;
+    height: 464px;
+  }
+
+  #salarios-renda{
+    width: 451px;
+    height:600px;
+  }
+
+  #concentracao-renda{
+    width: 680px;
+    height:490px;
+  }
+
+  #participacao-renda{
+    width: 724px;
+    height: 510px;
+  }
+
+  #custo-vida{
+    width: 537px;
+    height: 840px;
+  }
+
+  #preco-ouro{
+    width: 840px;
+    height: 537px;
+  }
+  
+  }
+
+</style>
+</head>
+<body>
+  <small style="text-align: center;margin-top:20px;"><a href="https://wtfhappenedin1971.com/">🇺🇸</a>  | <a href="https://twitter.com/heavilyarmedc">@heavilyarmedc</a> | <a href="https://twitter.com/doutorcaleb">@doutorcaleb</a></small>
+  <h1 style="margin-top:30px;padding-bottom:20px;">O QUE ACONTECEU EM 1971?</h1>
+
+  <div class="chart-container">
+    <p class="chart-title">Crescimento da produtividade e remuneração por hora desde 1948</p>
+    <div style="position: relative">
+      <picture>
+        <source srcset="assets/img/grafico-1.avif" type="image/avif">
+          <source srcset="assets/img/grafico-1.webp" type="image/webp">
+          <img src="assets/img/grafico-1.jpg" id="produtividade-crescimento" alt="produtividade-crescimento">
+      </picture>
+      <span class="chart-inside" style="top: 1%; right: -5%; font-size: calc(0.6em + 1.5vw);">Produtividade&nbsp;</span>
+      <span class="chart-inside" style="top: 58%; right: -5%; font-size: calc(0.6em + 1.5vw)">Remuneração</span>
+  </div>
+    <p class="fonte">Fonte: <a href="https://go.epi.org/M4z" target="_blank">Instituto de Política Econômica</a></p>
+  </div>
+
+  <div class="chart-container">
+    <p class="chart-title">Preço do Ouro ($)</p>
+    <picture>
+      <source srcset="assets/img/preco-ouro.webp" type="image/webp">
+      <img src="assets/img/preco-ouro.jpg" id="preco-ouro" alt="preco-ouro" >
+  </picture>  
+  <p class="fonte">Fonte: <a href="https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart" target="_blank">Preço Histórico do Ouro em 100 anos, Macro Trends</a></p>
+  </div>
+  <img src="assets/img/grafico-46.jpg" alt="preco-barril-petroleo" id="custo-barril-petroleo" loading="lazy">
+  <div class="chart-container">
+    <p class="chart-title">Dívida Americana</p>
+    <div>
+      <picture>
+        <source srcset="assets/img/grafico-32.avif" type="image/avif">
+        <source srcset="assets/img/grafico-32.webp" type="image/webp">
+        <img src="assets/img/grafico-32.jpg" alt="Dívida Americana" id="divida-americana" loading="lazy">
+      </picture>
+    </div>
+  </div>
+  <div class="chart-container"">
+    <p class="chart-title">Participação dos salários na renda total da economia nos EUA.</p>
+    <picture>
+      <source srcset="assets/img/grafico-5.webp" type="image/webp">
+      <img src="assets/img/grafico-5.jpg" id="salarios-renda" alt="salarios-renda" loading="lazy">
+  </picture>  
+    <p class="fonte" style="margin-top:10px;">Fonte:<a href="https://fred.stlouisfed.org/series/W270RE1A156NBEA" target="_blank">Bureau de Análise Econômica dos EUA.</a></p>
+  </div>
+  
+  <img src="assets/img/grafico-44.jpg" alt="balanca-comercial-mercadorias" id="balanca-comercial-mercadorias" loading="lazy">
+
+  <div class="chart-container" id="chart-6">
+    <p class="chart-title">Percentual da renda total dos 10% mais ricos nos EUA.</p>
+    <picture>
+      <source srcset="assets/img/grafico-6.webp" type="image/webp">
+      <img src="assets/img/grafico-6.jpg" id="concentracao-renda" alt="concentracao-renda" loading="lazy">
+  </picture>  
+    <p class="fonte">Fonte: <a href="https://eml.berkeley.edu/~saez/lecture_saez_arrow.pdf" target="_blank">Piketty e Saez, <small>2003 atualizado até 2011</small>. Citado em estudo de Emmanuel Saez, UC Berkeley.</a></p>
+  </div>
+
+  <img src="assets/img/grafico-66.jpg" alt="filhos-por-mulher" id="filhos-por-mulher" onload="if(window.innerWidth > 768) this.style.width='35%';" loading="lazy">
+
+
+  <div class="chart-container">
+    <p class="chart-title">Crescimento da renda nos EUA</small></p>
+    <div style="position: relative">
+    <picture>
+      <source srcset="assets/img/grafico-4.webp" type="image/webp">
+      <img src="assets/img/grafico-4.jpg" id="crescimento-renda" alt="crescimento-renda" loading="lazy">
+      <span class="chart-inside" style="top: 33%; right:45%; font-size: calc(0.5em + 1.5vw)">90% menor<br> renda</span>
+      <span class="chart-inside" style="top: 58%; right:-3%; font-size: calc(0.5em + 1.5vw)">1% maior<br> renda</span>
+  </picture>
+</div>  
+    <p class="fonte">Fonte: <a href="https://www.npr.org/sections/money/2015/02/11/384988128/the-fall-and-rise-of-u-s-inequality-in-2-graphs" target="_blank">NPR, A queda e o crescimento da desigualdade de renda estadunidense</a></p>
+  </div>
+  
+  <div class="chart-container">
+    <p class="chart-title">Renda familiar real entre 1947 e 2016, como uma % do nível de 1973</p>
+    <div style="position: relative">
+    <picture>
+      <source srcset="assets/img/grafico-3.webp" type="image/webp">
+      <img src="assets/img/grafico-3.jpg" id="diferenca-renda" alt="diferenca-renda">
+      <span class="chart-inside" style="top: 10%; right:20%; font-size: calc(0.7em + 1.2vw)">95% maior renda</span>
+      <span class="chart-inside" style="top: 24%; right:1%; font-size: calc(0.7em + 1.2vw)"><small>Mediana</small></span>
+      <span class="chart-inside" style="top: 52%; right:-3%; font-size: calc(0.7em + 1.2vw)">20% menor renda</span>
+  </picture>  
+</div>
+    <p class="fonte">Fonte: Cálculos do CBPP baseados em dados do Bureau de Censos dos EUA.</p>
+  </div>
+
+  <div class="chart-container">
+    <p class="chart-title">PIB e Renda nos EUA (1947-2014)</p>
+    <div style="position: relative">
+    <picture>
+      <!--<source srcset="assets/img/grafico-2.webp" type="image/webp">-->
+      <img src="assets/img/grafico-2.jpg" id="pib-salarios" alt="pib-salarios">
+      <span class="chart-inside" style="top: 4%; right:15%; font-size: calc(0.5em + 1.2vw)">PIB <i>por pessoa</i></span>
+      <span class="chart-inside" style="top: 23%; right:0%; font-size: calc(0.5em + 1.2vw)">PIB <small><i>por trabalhador</i></small></span>
+      <span class="chart-inside" style="top: 38%; right:2%; font-size: calc(0.35em + 1vw)">Renda média<br> <small><i>ajustada pelo PIB</i></small></span>
+      <span class="chart-inside" style="top: 52%; right:2%; font-size: calc(0.35em + 1vw)">Renda média<br> <small><i>ajustada pelo IPC</i></small></span>
+      <span class="chart-inside" style="top: 73%; right:10%; font-size: calc(0.5em + 1.2vw)">Renda Mediana<br> <small><i>ajustada pelo IPC</i></small></span>
+    </picture>
+</div> 
+    <p class="fonte">Fontes: Departamento de Análise Econômica (BEA), Departamento de Estatísticas do Trabalho (BLS)</p>
+  </div>
+    <img src="assets/img/grafico-9.jpg" alt="Image 9" loading="lazy">
+
+    <div class="chart-container" style="position: relative">
+      <p class="chart-title">EUA se tornou uma nação de casais com dupla renda.</p>
+      <div style="position: relative">
+      <picture>
+        <source srcset="assets/img/grafico-10.webp" type="image/webp">
+        <img src="assets/img/grafico-10.jpg" alt="Image 10" loading="lazy"><!--algum bug com a cloudflare aqu carregando antigo-->
+      </picture>
+        <span class="chart-inside" style="top: 7%; right: 10%; font-size: calc(0.6em + 1.5vw);">Casal trabalha</span>
+        <span class="chart-inside" style="top: 55%; right: -5%; font-size: calc(0.6em + 1.5vw)">Só marido trabalha</span>
+        <span class="chart-inside" style="top: 74%; right: -5%; font-size: calc(0.6em + 1.5vw)">Só esposa trabalha</span>
+      </div>
+      <p class="fonte">Fonte: <a href="https://taxfoundation.org/data/all/federal/america-has-become-nation-dual-income-working-couples/" target="_blank">Tax Foundation</a></p>
+    </div>
+    <img src="assets/img/grafico-37.jpg" alt="sp-500-PL" id="sp-500-PL" loading="lazy">
+    <img src="assets/img/grafico-45.jpg" alt="balanca-comercial-bens" id="balanca-comercial-bens" loading="lazy">
+    <img src="assets/img/grafico-39.jpg" alt="horas-sp-500" id="horas-sp-500" loading="lazy">
+    <img src="assets/img/grafico-38.jpg" alt="sp-500-PL-Shiller" id="sp-500-PL-Shiller" loading="lazy">
+    <img src="assets/img/grafico-40.jpg" alt="especulacao-producao" id="especulacao-producao" loading="lazy" onload="if(window.innerWidth > 768) this.style.width='30%';">-->
+    <img src="assets/img/grafico-41.jpg" alt="capitalizacao-setores" id="capitalizacao-setores" loading="lazy">
+    <img src="assets/img/grafico-42.jpg" alt="poupanca-pessoal" id="poupanca-pessoal" loading="lazy" onload="if(window.innerWidth > 768) this.style.width='55%';">    
+    <img src="assets/img/grafico-43.jpg" alt="poupanca-renda-usa" id="poupanca-renda-usa" loading="lazy">
+    <img src="assets/img/grafico-47.jpg" alt="taxas-de-juros-3000ac" id="taxas-de-juros-3000ac" loading="lazy">
+    <img src="assets/img/grafico-48.jpg" alt="retornos-titulos-10" id="retornos-titulos-10" loading="lazy">
+    <img src="assets/img/grafico-49.jpg" alt="energia-per-capita" id="energia-per-capita" loading="lazy">
+    <img src="assets/img/grafico-50.jpg" alt="energia-pib-g7" id="energia-pib-g7" loading="lazy">
+    <img src="assets/img/grafico-51.jpg" alt="consumo-energia-mundial" id="consumo-energia-mundial" loading="lazy">
+    <img src="assets/img/grafico-52.jpg" alt="posicao-ideologica-eua" id="posicao-ideologica-eua" loading="lazy">
+    <img src="assets/img/grafico-53.jpg" alt="discursos-politicos" id="discursos-politicos" loading="lazy">
+    <img src="assets/img/grafico-54.jpg" alt="problemas-mais-importantes" id="problemas-mais-importantes" loading="lazy">
+    <img src="assets/img/grafico-55.jpg" alt="paginas-registro-federal" id="paginas-registro-federal" loading="lazy">
+    <img src="assets/img/grafico-56.jpg" alt="objetivos-essenciais" id="objetivos-essenciais" loading="lazy">
+    <img src="assets/img/grafico-57.jpg" alt="gastos-educacao" id="gastos-educacao" loading="lazy">
+    <img src="assets/img/grafico-58.jpg" alt="advogados-por-pessoa" id="advogados-por-pessoa" loading="lazy">
+    <img src="assets/img/grafico-59.jpg" alt="doutorados-fisica" id="doutorados-fisica" loading="lazy">
+    <img src="assets/img/grafico-60.jpg" alt="encarcerados" id="encarcerados" loading="lazy">
+    <img src="assets/img/grafico-61.jpg" alt="morando-com-pais" id="morando-com-pais" loading="lazy">
+    <img src="assets/img/grafico-62.jpg" alt="primeiro-casamento" id="primeiro-casamento" loading="lazy">
+    <img src="assets/img/grafico-63.jpg" alt="divorcio-idade" id="divorcio-idade" loading="lazy">
+    <img src="assets/img/grafico-64.jpg" alt="familias-pobreza" id="familias-pobreza" loading="lazy">
+    <img src="assets/img/grafico-67.jpg" alt="obesidade-crianças" id="obesidade-crianças" loading="lazy">
+    <img src="assets/img/grafico-68.jpg" alt="gasto-saude-educacao" id="gasto-saude-educacao" loading="lazy">
+    <img src="assets/img/grafico-69.jpg" alt="medicos-administradores" id="medicos-administradores" loading="lazy">
+    <img src="assets/img/grafico-70.jpg" alt="oleos-vegetais" id="oleos-vegetais" loading="lazy">
+    <img src="assets/img/grafico-72.jpg" alt="rebanho-vacas" id="rebanho-vacas" loading="lazy">
+    <img src="assets/img/grafico-73.jpg" alt="dieta-estadunidense" id="dieta-estadunidense" loading="lazy">
+    <img src="assets/img/grafico-74.jpg" alt="disponibilidade-alimentos" id="disponibilidade-alimentos" loading="lazy">
+    <img src="assets/img/grafico-12.jpg" alt="Image 12" loading="lazy">
+    <img src="assets/img/grafico-14.jpg" alt="Image 14" loading="lazy">
+    <img src="assets/img/grafico-15.jpg" alt="Image 15" loading="lazy">
+    <img src="assets/img/grafico-16.jpg" alt="Image 16" loading="lazy">
+    <img src="assets/img/grafico-17.jpg" alt="Image 17" loading="lazy">
+    <img src="assets/img/grafico-18.jpg" alt="Image 18" loading="lazy">
+    <img src="assets/img/grafico-19.jpg" alt="Image 19" loading="lazy">
+    <img src="assets/img/grafico-20.jpg" alt="Image 20" loading="lazy">
+    <img src="assets/img/grafico-21.jpg" alt="Image 21" loading="lazy">
+    <img src="assets/img/grafico-22.jpg" alt="Image 22" loading="lazy">
+    <img src="assets/img/grafico-23.jpg" alt="Image 23" loading="lazy">
+    <img src="assets/img/grafico-24.jpg" alt="Image 24" loading="lazy">
+    <img src="assets/img/grafico-25.jpg" alt="Image 25" loading="lazy">
+    <img src="assets/img/grafico-26.jpg" alt="Image 26" loading="lazy">
+    <img src="assets/img/grafico-27.jpg" alt="Image 27" loading="lazy">
+    <img src="assets/img/grafico-28.jpg" alt="Image 28" loading="lazy">
+    <img src="assets/img/grafico-29.jpg" alt="Image 29" loading="lazy">
+    <img src="assets/img/grafico-30.jpg" alt="Image 30" loading="lazy">
+    <img src="assets/img/grafico-31.jpg" alt="Image 31" loading="lazy">
+    <img src="assets/img/grafico-33.jpg" alt="Image 33" loading="lazy">
+    <img src="assets/img/grafico-34.jpg" alt="Image 34" loading="lazy">
+    <img src="assets/img/grafico-35.jpg" alt="Image 35" loading="lazy">
+    <img src="assets/img/grafico-36.jpg" alt="Image 36" loading="lazy">
+    <quote style="font-size: large;margin-top: 35px; margin-right: 30px; margin-left: 30px; text-align: center; margin-bottom: 30px;">“<i>Eu não acredito que teremos um bom <a href="https://bitcoin.org/files/bitcoin-paper/bitcoin_pt_br.pdf" target="_blank">dinheiro</a> novamente antes de tirarmos isso das mãos do governo. Ou seja, não podemos retirá-lo violentamente das mãos do governo, tudo o que podemos fazer é, de maneira sutil e indireta, introduzir algo que eles não podem impedir.</i>”<br><br>F.A. Hayek, 1984.</quote> 
+
+
+
+    <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="pt" dir="ltr">Afinal, O QUE ACONTECEU EM 1971? <br><br>O fim do Capitalismo. O poder dos Estados deixou de ser definido pela capacidade de acumular CAPITAL e passou a ser determinado pela capacidade de acumular CRÉDITO. <br><br>Nasceu, então, o Creditismo. Ter dinheiro, em si, passa a não ser o fator… <a href="https://t.co/gUJR9gti46">https://t.co/gUJR9gti46</a></p>&mdash; Caleb (@doutorcaleb) <a href="https://twitter.com/doutorcaleb/status/1783620897833619788?ref_src=twsrc%5Etfw">April 25, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+      <div class="chart-container" style="position: relative">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: #020202bb;opacity: 1;margin: 70px;"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 15-5-5h4V7h2v5h4l-5 5z"></path></svg>
+
+    <p style="font-size: large;margin-top: 35px; margin-right: 30px; margin-left: 30px; text-align: center; margin-bottom: 30px;">
+      Um grande amigo precisa da sua ajuda.<br><br><br>Sua doação pode salvar a vida dele.</p> 
+
+         <p style="font-size: large;margin-top: 35px; margin-right: 30px; margin-left: 30px; text-align: center; margin-bottom: 30px;">
+          Arthur, do canal <a href="https://www.youtube.com/watch?v=kb7JYCL-cvY" target="_blank">Liberdade Sem Fronteiras</a>, está indo do Brasil aos
+          Estados Unidos de BICICLETA por necessidade</p> 
+
+          <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="pt" dir="ltr"><a href="https://twitter.com/libsfronteira?ref_src=twsrc%5Etfw">@libsfronteira</a> está indo do Brasil aos EUA de bicicleta. Sabe qual é a parte mais difícil da viagem? O primeiro dia.<br><br>siga ele para apoiar <a href="https://t.co/nd9Q77TorN">pic.twitter.com/nd9Q77TorN</a></p>&mdash; Caleb (@doutorcaleb) <a href="https://twitter.com/doutorcaleb/status/1785025482934628847?ref_src=twsrc%5Etfw">April 29, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <p style="font-size: large;margin-top: 60px; margin-right: 30px; margin-left: 30px; text-align: center; margin-bottom: 60px;">
+            Ele passa perigo de perder a vida todos os dias:</p>
+            
+            <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="es" dir="ltr"><a href="https://t.co/PFApX1LIwS">pic.twitter.com/PFApX1LIwS</a></p>&mdash; 🇺🇸👈🚴🇧🇷 ⚡Liberdade Sem Fronteiras ⚡ (@libsfronteira) <a href="https://twitter.com/libsfronteira/status/1786044757967323230?ref_src=twsrc%5Etfw">May 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+          
+          <p style="font-size: large;margin-top: 60px; margin-right: 30px; margin-left: 30px; text-align: center; margin-bottom: 30px;">
+            Manteremos essa campanha aqui até ele chegar nos EUA com vida, como rezamos para ocorrer</p>
+
+            <p class="chart-title"><strong>Por favor, ajude:</strong></p>
+
+
+            <p class="chart-title">CHAVE PIX EMAIL: arth.bertotto@gmail.com</p>
+
+        <p class="chart-title">Bitcoin Lightning</p>
+
+        <div style="text-align:center">
+        <picture>
+          <img style="height:70%;width:70%" src="assets/img/libsfronteiras-lightning.png" loading="lazy">
+        </picture>
+        <p class="chart-title">opt_out@walletofsatoshi.com</p>
+        </div>
+        <br>
+      </div>
+    </p> 
+  
+  </div>
+  </div>
+  <!--DONATE TO THE ORIGINAL CREATOR-->
+</html>
